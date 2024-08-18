@@ -1,0 +1,16 @@
+<div class="parent"><div class="container">
+    <div class="login">
+        <h2>Login</h2>
+        <form class="login-form">
+            <input type="text" name="userName" [(ngModel)]="loginnob.userName"  placeholder="UserName">
+            <input type="password" name="password" [(ngModel)]="loginnob.password" placeholder="Password">
+            <div class="options">
+                <input type="checkbox">
+                <label for="remember">Remember me!</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button type="button" (click)="onLogin()">Login</button>
+            <p>Don't have an account?<br><a href="#">Register</a></p>
+        </form>
+    </div>
+   
